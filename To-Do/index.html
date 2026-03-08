@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>To-Do List </h2>
+
+<!-- Add Task Form -->
+<div class="form">
+    <input type="text" id="title" placeholder="Title">
+    <input type="text" id="description" placeholder="Description">
+    <button onclick="addTask()">Save</button>
+</div>
+
+<br>
+
+<!-- Table for Tasks -->
+<table id="taskTable">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Added</th>
+            <th>Completed</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="taskBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
