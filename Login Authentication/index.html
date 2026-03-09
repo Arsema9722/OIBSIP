@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="loginbox">
+    <h2>Login</h2>
+    <input type="text" id="loginUser" placeholder="Username">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <div class="options">
+        <label><input type="checkbox" id="remember">Remember Me</label>
+        <span class="link" onclick="forgotpassword()">Forgot Password?</span>
+    </div>
+
+    <button onclick="login()">Login</button>
+    <p class="switch">Don't have account?<span class="link" onclick="showRegister()"> Register </span></p>
+    <p id="loginMessage"></p> 
+</div>
+    <div id="registerbox" class="hidden">
+    <h2>Register</h2>
+    <input type="text" id="regUser" placeholder="Username">
+    <input type="password" id="regPassword" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <p class="switch">Already have account?<span class="link" onclick="showLogin()">Login</span></p>
+    <p id="registerMessage"></p>
+</div>
+     <div id="dashboard" class="hidden">
+    <h2>Welcome</h2>
+    <p>You logged in successfully</p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
